@@ -1,4 +1,19 @@
 {
+  "name": "srtt",
+  "description": "A pre-configured template for Snowpack with React, TypeScript, and TailwindCSS",
+  "version": "1.0.0",
+  "license": "MIT",
+  "homepage": "https://github.com/chrisolsen/srtt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrisolsen/srtt"
+  },
+  "keywords": [
+    "snowpack",
+    "react",
+    "tailwindcss",
+    "typescript"
+  ],
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
@@ -8,10 +23,13 @@
   },
   "dependencies": {
     "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react-dom": "^17.0.0",
+    "tailwindcss": "^2.0.2",
+    "tailwindcss-classnames": "^2.0.0"
   },
   "devDependencies": {
     "@snowpack/plugin-dotenv": "^2.0.5",
+    "@snowpack/plugin-postcss": "^1.1.0",
     "@snowpack/plugin-react-refresh": "^2.4.0",
     "@snowpack/plugin-typescript": "^1.2.0",
     "@snowpack/web-test-runner-plugin": "^0.2.0",
@@ -22,7 +40,10 @@
     "@types/react-dom": "^17.0.0",
     "@types/snowpack-env": "^2.3.2",
     "@web/test-runner": "^0.12.0",
+    "autoprefixer": "^10.2.4",
     "chai": "^4.2.0",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1",
     "prettier": "^2.0.5",
     "snowpack": "^3.0.1",
     "typescript": "^4.0.0"

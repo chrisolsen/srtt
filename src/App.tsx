@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
+import { classnames } from "tailwindcss-classnames";
 interface AppProps {}
 
 function App({}: AppProps) {
@@ -17,6 +18,9 @@ function App({}: AppProps) {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <p className={classnames("text-red-600", "p-4", "rounded", "mb-4")}>
+          Tailwind, with built-in tooling for custom configs test
+        </p>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
