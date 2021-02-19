@@ -17,7 +17,8 @@
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
-    "test": "web-test-runner \"src/**/*.test.tsx\"",
+    "test": "web-test-runner --puppeteer \"src/**/*.test.tsx\"",
+    "test:watch": "web-test-runner --watch --puppeteer \"src/**/*.test.tsx\"",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\""
   },
@@ -40,6 +41,7 @@
     "@types/react-dom": "^17.0.0",
     "@types/snowpack-env": "^2.3.2",
     "@web/test-runner": "^0.12.0",
+    "@web/test-runner-puppeteer": "^0.9.3",
     "autoprefixer": "^10.2.4",
     "chai": "^4.2.0",
     "postcss": "^8.2.4",
